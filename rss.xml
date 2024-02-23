@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>且歌且行</title>
+        <link>http://def.life/</link>
+        <description>FatDeer的个人博客</description>
+        <generator>Hugo 0.81.0 https://gohugo.io/</generator>
+        
+            <language>zh-CN</language>
+        
+        
+            <managingEditor>fatdeer@foxmail.com (fatdeer)</managingEditor>
+        
+        
+            <webMaster>fatdeer@foxmail.com (fatdeer)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+        
+        <lastBuildDate>Fri, 23 Feb 2024 07:43:22 &#43;0000</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="http://def.life/rss.xml" />
+        
+        
+            <item>
+                <title>为Github配置代理</title>
+                <link>http://def.life/tech/config_proxy_for_github/</link>
+                <guid isPermaLink="true">http://def.life/tech/config_proxy_for_github/</guid>
+                <pubDate>Tue, 18 Jan 2022 14:25:00 &#43;0800</pubDate>
+                
+                    <author>fatdeer@foxmail.com (fatdeer)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;ul&gt;
+&lt;li&gt;配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ git config --global http.proxy &#39;socks5://127.0.0.1:1080&#39;
+$ git config --global https.proxy &#39;socks5://127.0.0.1:1080&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;为Github单独配置代理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+git config --global https.https://github.com.proxy socks5://127.0.0.1:1080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;验证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ git config --list | grep proxy
+http.proxy=socks5://127.0.0.1:1080
+https.proxy=socks5://127.0.0.1:1080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;取消配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;git config --global --unset http.proxy
+git config --global --unset https.proxy
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;取消Github占用配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;git config --global --unset http.https://github.com.proxy
+git config --global --unset https.https://github.com.proxy
+&lt;/code&gt;&lt;/pre&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/categories/work/">Work</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/github/">Github</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>通过nmcli命令配置网络</title>
+                <link>http://def.life/tech/config_network_using_nmcli/</link>
+                <guid isPermaLink="true">http://def.life/tech/config_network_using_nmcli/</guid>
+                <pubDate>Sun, 16 Jan 2022 09:00:00 &#43;0800</pubDate>
+                
+                    <author>fatdeer@foxmail.com (fatdeer)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;h1 id=&#34;centos-82openeuler-2110-配置备忘&#34;&gt;CentOS 8.2/OpenEuler 21.10 配置备忘&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;nmcli con add type bond ifname bond0 bond.options &amp;quot;miimon=100,mode=1&amp;quot; ipv6.method disabled ipv4.method disabled
+nmcli con add type ethernet ifname enp125s0f0 master bond0
+nmcli con add type ethernet ifname enp125s0f1 master bond0
+nmcli con add type vlan con-name bond0.1208 dev bond0 id 1208 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xxx.xx.xx/24
+
+nmcli con add type bond ifname bond2 bond.options &amp;quot;miimon=100,mode=4,xmit_hash_policy=layer3+4&amp;quot; ipv6.method disabled ipv4.method disabled
+nmcli con add type ethernet ifname enp189s0f0 master bond2
+nmcli con add type ethernet ifname enp189s0f1 master bond2
+nmcli con add type vlan con-name bond1.1808 dev bond1 id 1808 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xx.xx.3/24 ipv4.gateway 1xx.xx.xx.254
+
+nmcli con add type vlan con-name bond1.1840 dev bond1 id 1840 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xx.xx.xx/24
+nmcli connection modify bond0.1208 +ipv4.routes &amp;quot;192.168.0.0/16 100.71.8.254&amp;quot;
+nmcli c reload &amp;amp;&amp;amp; nmcli networking off &amp;amp;&amp;amp; nmcli networking on
+&lt;/code&gt;&lt;/pre&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/categories/work/">Work</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/linux/">Linux</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/network/">Network</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Linux命令备忘</title>
+                <link>http://def.life/tech/linux_command_memo/</link>
+                <guid isPermaLink="true">http://def.life/tech/linux_command_memo/</guid>
+                <pubDate>Mon, 16 Aug 2021 09:00:00 &#43;0800</pubDate>
+                
+                    <author>fatdeer@foxmail.com (fatdeer)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;h1 id=&#34;端口转发&#34;&gt;端口转发&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;# socat TCP-LISTEN:80,fork,reuseaddr TCP:XXX:80
+# socat TCP-LISTEN:8630,fork,reuseaddr TCP:127.0.0.1:22
+# ssh -o ProxyCommand=&amp;quot;nc --proxy-type socks5 --proxy 10.X.X.X:1080 %h %p&amp;quot; root@10.X.X.X
+# nc -c nc XXX 80 -l 80 -v -k
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;紧急救援&#34;&gt;紧急救援&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;mount -o remount,rw /
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;即时http-server&#34;&gt;即时HTTP Server&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Python 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;python -m SimpleHTTPServer 8080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Python 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;python -m http.server 8080
+python -m CGIHTTPServer 8080
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;下载nexus&#34;&gt;下载Nexus&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;wget --user=userid --password=password &#39;https://nexusurl:8081/nexus/repository/&amp;lt;repository id&amp;gt;/&amp;lt;replace the grouf is . with /&amp;gt;/&amp;lt;artifact id&amp;gt;/&amp;lt;version&amp;gt;/&amp;lt;file name&amp;gt;&#39; -O ${WORKSPACE}/&amp;lt;new file name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;ipmitool&#34;&gt;ipmitool&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;ipmitool -H ipaddress -I lanplus -U username -P password power status
+ipmitool -H ipaddress -I lanplus -U username -P password power on
+ipmitool -H ipaddress -I lanplus -U username -P password power off
+ipmitool -H ipaddress -I lanplus -U username -P password bmc reset cold
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;pip&#34;&gt;pip&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;pip install XXX -i https://pypi.douban.com/simple --trusted-host=pypi.douban.com
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;以iso形式打包网络配置文件&#34;&gt;以ISO形式打包网络配置文件&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;1. yum install genisoimage -y
+2. mkisofs -r -o XXXX.iso /etc/sysconfig/network-scripts
+3. 导出XXXX.iso，并在终端页面CD/DVD挂载XXXX.iso
+4. mount /dev/sr0 /path/to/mount
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;为编译活动增加swap空间&#34;&gt;为编译活动增加swap空间&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;dd if=/dev/zero of=swapfile bs=1G count=10
+mkswap swapfile
+swapon swapfile
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;storcli操作&#34;&gt;Storcli操作&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;storcli64 /c0 show
+storcli64 /c0 set jbod=on
+storcli64 /c0 /v1 del
+storcli64 /c0 /e8 /s2 set jbod
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;续签证书&#34;&gt;续签证书&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;openssl x509 -req -sha256 -days &amp;lt;&amp;gt; -in &amp;lt;&amp;gt;.csr -signkey &amp;lt;&amp;gt;.key -out &amp;lt;&amp;gt;.crt
+&lt;/code&gt;&lt;/pre&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/categories/work/">Work</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/linux/">Linux</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Docker配置代理</title>
+                <link>http://def.life/tech/config_proxy_for_docker/</link>
+                <guid isPermaLink="true">http://def.life/tech/config_proxy_for_docker/</guid>
+                <pubDate>Sun, 12 Jul 2020 12:00:00 &#43;0800</pubDate>
+                
+                    <author>fatdeer@foxmail.com (fatdeer)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;h1 id=&#34;docker配置代理&#34;&gt;Docker配置代理&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;创建docker服务插件目录&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo mkdir -p /etc/systemd/system/docker.service.d
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个名为http-proxy.conf的文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo touch /etc/systemd/system/docker.service.d/http-proxy.conf 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑http-proxy.conf的文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo vim /etc/systemd/system/docker.service.d/https-proxy.conf 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;写入内容&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Service]
+Environment=&amp;quot;HTTP_PROXY=socks5://&amp;lt;ip&amp;gt;:&amp;lt;port&amp;gt;/&amp;quot; &amp;quot;HTTPS_PROXY=socks5://&amp;lt;ip&amp;gt;:&amp;lt;port&amp;gt;/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新加载服务程序的配置文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo systemctl daemon-reload
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重启docker&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo systemctl restart docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;验证是否配置成功&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;systemctl show --property=Environment docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/categories/work/">Work</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/linux/">Linux</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/network/">Network</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/docker/">Docker</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Windows命令备忘</title>
+                <link>http://def.life/tech/windows_command_memo/</link>
+                <guid isPermaLink="true">http://def.life/tech/windows_command_memo/</guid>
+                <pubDate>Sat, 14 Mar 2020 09:00:00 &#43;0800</pubDate>
+                
+                    <author>fatdeer@foxmail.com (fatdeer)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;h1 id=&#34;路由设置&#34;&gt;路由设置&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;route add 172.16.0.0 mask 255.240.0.0 192.168.19.254 -p
+route add 10.0.0.0 mask 255.0.0.0 192.168.19.254 -p
+route add 0.0.0.0 mask 0.0.0.0 172.20.19.254 -p
+route delete 0.0.0.0 mask 0.0.0.0 192.168.19.254
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;开启关闭idm代理&#34;&gt;开启/关闭IDM代理&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;@echo off  
+reg add HKEY_CURRENT_USER\Software\DownloadManager /v nProxyMode /t REG_DWORD /d 16 /f
+@echo off  
+reg add HKEY_CURRENT_USER\Software\DownloadManager /v nProxyMode /t REG_DWORD /d 1 /f
+&lt;/code&gt;&lt;/pre&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/categories/work/">Work</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/windows/">Windows</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Github/Gerrit用法备忘</title>
+                <link>http://def.life/tech/help_for_github_or_gerrit/</link>
+                <guid isPermaLink="true">http://def.life/tech/help_for_github_or_gerrit/</guid>
+                <pubDate>Tue, 19 Mar 2019 11:15:00 &#43;0800</pubDate>
+                
+                    <author>fatdeer@foxmail.com (fatdeer)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description>&lt;h1 id=&#34;配置ssh公钥访问github&#34;&gt;配置SSH公钥访问Github&lt;/h1&gt;
+&lt;p&gt;Github提供两种克隆URL：&lt;strong&gt;HTTPS&lt;/strong&gt;和&lt;strong&gt;SSH&lt;/strong&gt;；HTTPS URL的PUSH等操作时需要验证用户名和密码；而使用SSH URL可以避免这种麻烦，但是在使用之前需要配置SSH KEY。&lt;/p&gt;
+&lt;p&gt;配置方法步骤如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;配置git&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ git config --global user.name &amp;quot;fatdeer&amp;quot;
+$ git config --global user.email &amp;quot;fatdeer@foxmail.com&amp;quot;
+$ git config --list
+&amp;gt; user.name=fatdeer
+&amp;gt; user.email=fatdeer@foxmail.com
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;创建SSH KEY&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &amp;quot;fatdeer@foxmail.com&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;参考：&lt;a href=&#34;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/&#34;&gt;创建SSH Key&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在Github上配置SSH 公钥&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考：&lt;a href=&#34;https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/&#34;&gt;添加SSH Key到Github账户&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;验证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;ssh -T git@github.com
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;添加更新submodule&#34;&gt;添加/更新Submodule&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;git submodule add -b &amp;lt;branch&amp;gt; --force &amp;lt;repository_url&amp;gt; &amp;lt;path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;sparse-checkout&#34;&gt;Sparse-Checkout&lt;/h1&gt;
+&lt;pre&gt;&lt;code&gt;git clone --no-checkout &amp;lt;path&amp;gt;
+git config core.sparsecheckout true
+echo &amp;quot;path1/&amp;quot; &amp;gt;&amp;gt; .git/info/sparse-checkout
+git checkout
+&lt;/code&gt;&lt;/pre&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/categories/work/">Work</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="http://def.life/tags/github/">Github</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
