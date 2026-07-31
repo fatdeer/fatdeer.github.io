@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <title type="text">且歌且行</title>
+    <subtitle type="html">FatDeer的个人博客</subtitle>
+    <updated>2026-07-31T01:48:17&#43;00:00</updated>
+    <id>http://def.life/</id>
+    <link rel="alternate" type="text/html" href="http://def.life/" />
+    <link rel="self" type="application/atom&#43;xml" href="http://def.life/atom.xml" />
+    
+    <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    <generator uri="https://gohugo.io/" version="0.153.3">Hugo</generator>
+        <entry>
+            <title type="text">
+Mac OS备忘</title>
+            <link rel="alternate" type="text/html" href="http://def.life/tech/mac_os_skills/" />
+            <id>http://def.life/tech/mac_os_skills/</id>
+            <updated>2026-07-31T01:48:14&#43;00:00</updated>
+            <published>2026-02-12T09:00:00&#43;08:00</published>
+            <author>
+                    <uri>http://def.life/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">
+                &lt;h1 id=&#34;mac-os-26-控制中心无法关闭问题&#34;&gt;Mac OS 26 控制中心无法关闭问题&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;按下command+空格键 -&amp;gt; 输入终端 -&amp;gt; 回车
+在终端里输入这个命令 -&amp;gt; killall ControlCenter -&amp;gt; 回车
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;mac-os-command--空格失效问题&#34;&gt;Mac OS Command + 空格失效问题&lt;/h1&gt;
+&lt;h2 id=&#34;问题现象&#34;&gt;问题现象&lt;/h2&gt;
+&lt;p&gt;在 macOS 中按下 &lt;code&gt;Command (⌘) + 空格&lt;/code&gt; 无法打开 Spotlight 搜索，快捷键无响应。&lt;/p&gt;
+                
+
+            </summary>
+            
+                <content type="html">
+                    
+&lt;h1 id=&#34;mac-os-26-控制中心无法关闭问题&#34;&gt;&lt;a href=&#34;http://def.life/tech/mac_os_skills/#mac-os-26-控制中心无法关闭问题&#34; class=&#34;anchor-link&#34; aria-label=&#34;mac-os-26-控制中心无法关闭问题&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;Mac OS 26 控制中心无法关闭问题&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;按下command+空格键 -&amp;gt; 输入终端 -&amp;gt; 回车
+在终端里输入这个命令 -&amp;gt; killall ControlCenter -&amp;gt; 回车
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;mac-os-command--空格失效问题&#34;&gt;&lt;a href=&#34;http://def.life/tech/mac_os_skills/#mac-os-command--空格失效问题&#34; class=&#34;anchor-link&#34; aria-label=&#34;mac-os-command--空格失效问题&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;Mac OS Command + 空格失效问题&lt;/h1&gt;
+&lt;h2 id=&#34;问题现象&#34;&gt;&lt;a href=&#34;http://def.life/tech/mac_os_skills/#问题现象&#34; class=&#34;anchor-link&#34; aria-label=&#34;问题现象&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;问题现象&lt;/h2&gt;
+&lt;p&gt;在 macOS 中按下 &lt;code&gt;Command (⌘) + 空格&lt;/code&gt; 无法打开 Spotlight 搜索，快捷键无响应。&lt;/p&gt;
+&lt;h2 id=&#34;处理方案&#34;&gt;&lt;a href=&#34;http://def.life/tech/mac_os_skills/#处理方案&#34; class=&#34;anchor-link&#34; aria-label=&#34;处理方案&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;处理方案&lt;/h2&gt;
+&lt;p&gt;目前验证有效的处理方式：重启 Spotlight 服务。&lt;/p&gt;
+&lt;p&gt;打开终端执行：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;div class=&#34;table-container&#34;&gt;&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;killall Spotlight
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;执行后 Spotlight 进程会自动重新启动，等待几秒钟后再次按下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Command (⌘) + 空格
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;即可恢复 Spotlight 搜索功能。&lt;/p&gt;
+&lt;h2 id=&#34;补充说明&#34;&gt;&lt;a href=&#34;http://def.life/tech/mac_os_skills/#补充说明&#34; class=&#34;anchor-link&#34; aria-label=&#34;补充说明&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;补充说明&lt;/h2&gt;
+&lt;p&gt;该问题通常与 Spotlight 服务异常、系统后台进程状态异常有关。优先使用 &lt;code&gt;killall Spotlight&lt;/code&gt; 重启服务，无需重启系统。&lt;/p&gt;
+
+                    
+
+                </content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/categories/work/" term="Work" label="Work" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/mac/" term="Mac" label="Mac" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">
+为Github配置代理</title>
+            <link rel="alternate" type="text/html" href="http://def.life/tech/config_proxy_for_github/" />
+            <id>http://def.life/tech/config_proxy_for_github/</id>
+            <updated>2026-07-31T01:48:14&#43;00:00</updated>
+            <published>2022-01-18T14:25:00&#43;08:00</published>
+            <author>
+                    <uri>http://def.life/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">
+                &lt;ul&gt;
+&lt;li&gt;配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git config --global http.proxy &amp;#39;socks5://127.0.0.1:1080&amp;#39;
+$ git config --global https.proxy &amp;#39;socks5://127.0.0.1:1080&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;为Github单独配置代理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+git config --global https.https://github.com.proxy socks5://127.0.0.1:1080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;验证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git config --list | grep proxy
+http.proxy=socks5://127.0.0.1:1080
+https.proxy=socks5://127.0.0.1:1080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;取消配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git config --global --unset http.proxy
+git config --global --unset https.proxy
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;取消Github占用配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git config --global --unset http.https://github.com.proxy
+git config --global --unset https.https://github.com.proxy
+&lt;/code&gt;&lt;/pre&gt;
+                
+
+            </summary>
+            
+                <content type="html">
+                    
+&lt;ul&gt;
+&lt;li&gt;配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git config --global http.proxy &amp;#39;socks5://127.0.0.1:1080&amp;#39;
+$ git config --global https.proxy &amp;#39;socks5://127.0.0.1:1080&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;为Github单独配置代理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
+git config --global https.https://github.com.proxy socks5://127.0.0.1:1080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;验证&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git config --list | grep proxy
+http.proxy=socks5://127.0.0.1:1080
+https.proxy=socks5://127.0.0.1:1080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;取消配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git config --global --unset http.proxy
+git config --global --unset https.proxy
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;取消Github占用配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git config --global --unset http.https://github.com.proxy
+git config --global --unset https.https://github.com.proxy
+&lt;/code&gt;&lt;/pre&gt;
+                    
+
+                </content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/categories/work/" term="Work" label="Work" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/github/" term="Github" label="Github" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">
+通过nmcli命令配置网络</title>
+            <link rel="alternate" type="text/html" href="http://def.life/tech/config_network_using_nmcli/" />
+            <id>http://def.life/tech/config_network_using_nmcli/</id>
+            <updated>2026-07-31T01:48:14&#43;00:00</updated>
+            <published>2022-01-16T09:00:00&#43;08:00</published>
+            <author>
+                    <uri>http://def.life/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">
+                &lt;h1 id=&#34;centos-82openeuler-2110-配置备忘&#34;&gt;CentOS 8.2/OpenEuler 21.10 配置备忘&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nmcli con add type bond ifname bond0 bond.options &amp;#34;miimon=100,mode=1&amp;#34; ipv6.method disabled ipv4.method disabled
+nmcli con add type ethernet ifname enp125s0f0 master bond0
+nmcli con add type ethernet ifname enp125s0f1 master bond0
+nmcli con add type vlan con-name bond0.1208 dev bond0 id 1208 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xxx.xx.xx/24
+
+nmcli con add type bond ifname bond2 bond.options &amp;#34;miimon=100,mode=4,xmit_hash_policy=layer3+4&amp;#34; ipv6.method disabled ipv4.method disabled
+nmcli con add type ethernet ifname enp189s0f0 master bond2
+nmcli con add type ethernet ifname enp189s0f1 master bond2
+nmcli con add type vlan con-name bond1.1808 dev bond1 id 1808 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xx.xx.3/24 ipv4.gateway 1xx.xx.xx.254
+
+nmcli con add type vlan con-name bond1.1840 dev bond1 id 1840 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xx.xx.xx/24
+nmcli connection modify bond0.1208 +ipv4.routes &amp;#34;192.168.0.0/16 100.71.8.254&amp;#34;
+nmcli c reload &amp;amp;&amp;amp; nmcli networking off &amp;amp;&amp;amp; nmcli networking on
+&lt;/code&gt;&lt;/pre&gt;
+                
+
+            </summary>
+            
+                <content type="html">
+                    
+&lt;h1 id=&#34;centos-82openeuler-2110-配置备忘&#34;&gt;&lt;a href=&#34;http://def.life/tech/config_network_using_nmcli/#centos-82openeuler-2110-配置备忘&#34; class=&#34;anchor-link&#34; aria-label=&#34;centos-82openeuler-2110-配置备忘&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;CentOS 8.2/OpenEuler 21.10 配置备忘&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;nmcli con add type bond ifname bond0 bond.options &amp;#34;miimon=100,mode=1&amp;#34; ipv6.method disabled ipv4.method disabled
+nmcli con add type ethernet ifname enp125s0f0 master bond0
+nmcli con add type ethernet ifname enp125s0f1 master bond0
+nmcli con add type vlan con-name bond0.1208 dev bond0 id 1208 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xxx.xx.xx/24
+
+nmcli con add type bond ifname bond2 bond.options &amp;#34;miimon=100,mode=4,xmit_hash_policy=layer3+4&amp;#34; ipv6.method disabled ipv4.method disabled
+nmcli con add type ethernet ifname enp189s0f0 master bond2
+nmcli con add type ethernet ifname enp189s0f1 master bond2
+nmcli con add type vlan con-name bond1.1808 dev bond1 id 1808 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xx.xx.3/24 ipv4.gateway 1xx.xx.xx.254
+
+nmcli con add type vlan con-name bond1.1840 dev bond1 id 1840 ipv4.method manual connection.autoconnect yes ipv4.addresses 1xx.xx.xx.xx/24
+nmcli connection modify bond0.1208 +ipv4.routes &amp;#34;192.168.0.0/16 100.71.8.254&amp;#34;
+nmcli c reload &amp;amp;&amp;amp; nmcli networking off &amp;amp;&amp;amp; nmcli networking on
+&lt;/code&gt;&lt;/pre&gt;
+                    
+
+                </content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/categories/work/" term="Work" label="Work" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/linux/" term="Linux" label="Linux" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/network/" term="Network" label="Network" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">
+Linux命令备忘</title>
+            <link rel="alternate" type="text/html" href="http://def.life/tech/linux_command_memo/" />
+            <id>http://def.life/tech/linux_command_memo/</id>
+            <updated>2026-07-31T01:48:14&#43;00:00</updated>
+            <published>2021-08-16T09:00:00&#43;08:00</published>
+            <author>
+                    <uri>http://def.life/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">
+                &lt;h1 id=&#34;端口转发&#34;&gt;端口转发&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# socat TCP-LISTEN:80,fork,reuseaddr TCP:XXX:80
+# socat TCP-LISTEN:8630,fork,reuseaddr TCP:127.0.0.1:22
+# ssh -o ProxyCommand=&amp;#34;nc --proxy-type socks5 --proxy 10.X.X.X:1080 %h %p&amp;#34; root@10.X.X.X
+# nc -c nc XXX 80 -l 80 -v -k
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;紧急救援&#34;&gt;紧急救援&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mount -o remount,rw /
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;即时http-server&#34;&gt;即时HTTP Server&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Python 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m SimpleHTTPServer 8080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Python 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m http.server 8080
+python -m CGIHTTPServer 8080
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;下载nexus&#34;&gt;下载Nexus&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget --user=userid --password=password &amp;#39;https://nexusurl:8081/nexus/repository/&amp;lt;repository id&amp;gt;/&amp;lt;replace the grouf is . with /&amp;gt;/&amp;lt;artifact id&amp;gt;/&amp;lt;version&amp;gt;/&amp;lt;file name&amp;gt;&amp;#39; -O ${WORKSPACE}/&amp;lt;new file name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;ipmitool&#34;&gt;ipmitool&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ipmitool -H ipaddress -I lanplus -U username -P password power status
+ipmitool -H ipaddress -I lanplus -U username -P password power on
+ipmitool -H ipaddress -I lanplus -U username -P password power off
+ipmitool -H ipaddress -I lanplus -U username -P password bmc reset cold
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;pip&#34;&gt;pip&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pip install XXX -i https://pypi.douban.com/simple --trusted-host=pypi.douban.com
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;以iso形式打包网络配置文件&#34;&gt;以ISO形式打包网络配置文件&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. yum install genisoimage -y
+2. mkisofs -r -o XXXX.iso /etc/sysconfig/network-scripts
+3. 导出XXXX.iso，并在终端页面CD/DVD挂载XXXX.iso
+4. mount /dev/sr0 /path/to/mount
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;为编译活动增加swap空间&#34;&gt;为编译活动增加swap空间&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dd if=/dev/zero of=swapfile bs=1G count=10
+mkswap swapfile
+swapon swapfile
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;storcli操作&#34;&gt;Storcli操作&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;storcli64 /c0 show
+storcli64 /c0 set jbod=on
+storcli64 /c0 /v1 del
+storcli64 /c0 /e8 /s2 set jbod
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;续签证书&#34;&gt;续签证书&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;openssl x509 -req -sha256 -days &amp;lt;&amp;gt; -in &amp;lt;&amp;gt;.csr -signkey &amp;lt;&amp;gt;.key -out &amp;lt;&amp;gt;.crt
+&lt;/code&gt;&lt;/pre&gt;
+                
+
+            </summary>
+            
+                <content type="html">
+                    
+&lt;h1 id=&#34;端口转发&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#端口转发&#34; class=&#34;anchor-link&#34; aria-label=&#34;端口转发&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;端口转发&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# socat TCP-LISTEN:80,fork,reuseaddr TCP:XXX:80
+# socat TCP-LISTEN:8630,fork,reuseaddr TCP:127.0.0.1:22
+# ssh -o ProxyCommand=&amp;#34;nc --proxy-type socks5 --proxy 10.X.X.X:1080 %h %p&amp;#34; root@10.X.X.X
+# nc -c nc XXX 80 -l 80 -v -k
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;紧急救援&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#紧急救援&#34; class=&#34;anchor-link&#34; aria-label=&#34;紧急救援&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;紧急救援&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mount -o remount,rw /
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;即时http-server&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#即时http-server&#34; class=&#34;anchor-link&#34; aria-label=&#34;即时http-server&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;即时HTTP Server&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Python 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m SimpleHTTPServer 8080
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Python 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m http.server 8080
+python -m CGIHTTPServer 8080
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;下载nexus&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#下载nexus&#34; class=&#34;anchor-link&#34; aria-label=&#34;下载nexus&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;下载Nexus&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;wget --user=userid --password=password &amp;#39;https://nexusurl:8081/nexus/repository/&amp;lt;repository id&amp;gt;/&amp;lt;replace the grouf is . with /&amp;gt;/&amp;lt;artifact id&amp;gt;/&amp;lt;version&amp;gt;/&amp;lt;file name&amp;gt;&amp;#39; -O ${WORKSPACE}/&amp;lt;new file name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;ipmitool&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#ipmitool&#34; class=&#34;anchor-link&#34; aria-label=&#34;ipmitool&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;ipmitool&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ipmitool -H ipaddress -I lanplus -U username -P password power status
+ipmitool -H ipaddress -I lanplus -U username -P password power on
+ipmitool -H ipaddress -I lanplus -U username -P password power off
+ipmitool -H ipaddress -I lanplus -U username -P password bmc reset cold
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;pip&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#pip&#34; class=&#34;anchor-link&#34; aria-label=&#34;pip&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;pip&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pip install XXX -i https://pypi.douban.com/simple --trusted-host=pypi.douban.com
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;以iso形式打包网络配置文件&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#以iso形式打包网络配置文件&#34; class=&#34;anchor-link&#34; aria-label=&#34;以iso形式打包网络配置文件&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;以ISO形式打包网络配置文件&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1. yum install genisoimage -y
+2. mkisofs -r -o XXXX.iso /etc/sysconfig/network-scripts
+3. 导出XXXX.iso，并在终端页面CD/DVD挂载XXXX.iso
+4. mount /dev/sr0 /path/to/mount
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;为编译活动增加swap空间&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#为编译活动增加swap空间&#34; class=&#34;anchor-link&#34; aria-label=&#34;为编译活动增加swap空间&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;为编译活动增加swap空间&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dd if=/dev/zero of=swapfile bs=1G count=10
+mkswap swapfile
+swapon swapfile
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;storcli操作&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#storcli操作&#34; class=&#34;anchor-link&#34; aria-label=&#34;storcli操作&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;Storcli操作&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;storcli64 /c0 show
+storcli64 /c0 set jbod=on
+storcli64 /c0 /v1 del
+storcli64 /c0 /e8 /s2 set jbod
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;续签证书&#34;&gt;&lt;a href=&#34;http://def.life/tech/linux_command_memo/#续签证书&#34; class=&#34;anchor-link&#34; aria-label=&#34;续签证书&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;续签证书&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;openssl x509 -req -sha256 -days &amp;lt;&amp;gt; -in &amp;lt;&amp;gt;.csr -signkey &amp;lt;&amp;gt;.key -out &amp;lt;&amp;gt;.crt
+&lt;/code&gt;&lt;/pre&gt;
+                    
+
+                </content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/categories/work/" term="Work" label="Work" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/linux/" term="Linux" label="Linux" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">
+Docker配置代理</title>
+            <link rel="alternate" type="text/html" href="http://def.life/tech/config_proxy_for_docker/" />
+            <id>http://def.life/tech/config_proxy_for_docker/</id>
+            <updated>2026-07-31T01:48:14&#43;00:00</updated>
+            <published>2020-07-12T12:00:00&#43;08:00</published>
+            <author>
+                    <uri>http://def.life/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">
+                &lt;h1 id=&#34;docker配置代理&#34;&gt;Docker配置代理&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;创建docker服务插件目录&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir -p /etc/systemd/system/docker.service.d
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个名为http-proxy.conf的文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo touch /etc/systemd/system/docker.service.d/http-proxy.conf 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑http-proxy.conf的文件&lt;/p&gt;
+                
+
+            </summary>
+            
+                <content type="html">
+                    
+&lt;h1 id=&#34;docker配置代理&#34;&gt;&lt;a href=&#34;http://def.life/tech/config_proxy_for_docker/#docker配置代理&#34; class=&#34;anchor-link&#34; aria-label=&#34;docker配置代理&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;Docker配置代理&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;创建docker服务插件目录&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo mkdir -p /etc/systemd/system/docker.service.d
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个名为http-proxy.conf的文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo touch /etc/systemd/system/docker.service.d/http-proxy.conf 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑http-proxy.conf的文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo vim /etc/systemd/system/docker.service.d/https-proxy.conf 
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;写入内容&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Service]
+Environment=&amp;#34;HTTP_PROXY=socks5://&amp;lt;ip&amp;gt;:&amp;lt;port&amp;gt;/&amp;#34; &amp;#34;HTTPS_PROXY=socks5://&amp;lt;ip&amp;gt;:&amp;lt;port&amp;gt;/&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新加载服务程序的配置文件&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo systemctl daemon-reload
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重启docker&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo systemctl restart docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;验证是否配置成功&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;systemctl show --property=Environment docker
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+                    
+
+                </content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/categories/work/" term="Work" label="Work" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/linux/" term="Linux" label="Linux" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/network/" term="Network" label="Network" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/docker/" term="Docker" label="Docker" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">
+Windows命令备忘</title>
+            <link rel="alternate" type="text/html" href="http://def.life/tech/windows_command_memo/" />
+            <id>http://def.life/tech/windows_command_memo/</id>
+            <updated>2026-07-31T01:48:14&#43;00:00</updated>
+            <published>2020-03-14T09:00:00&#43;08:00</published>
+            <author>
+                    <uri>http://def.life/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">
+                &lt;h1 id=&#34;路由设置&#34;&gt;路由设置&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;route add 172.16.0.0 mask 255.240.0.0 192.168.19.254 -p
+route add 10.0.0.0 mask 255.0.0.0 192.168.19.254 -p
+route add 0.0.0.0 mask 0.0.0.0 172.20.19.254 -p
+route delete 0.0.0.0 mask 0.0.0.0 192.168.19.254
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;开启关闭idm代理&#34;&gt;开启/关闭IDM代理&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@echo off  
+reg add HKEY_CURRENT_USER\Software\DownloadManager /v nProxyMode /t REG_DWORD /d 16 /f
+@echo off  
+reg add HKEY_CURRENT_USER\Software\DownloadManager /v nProxyMode /t REG_DWORD /d 1 /f
+&lt;/code&gt;&lt;/pre&gt;
+                
+
+            </summary>
+            
+                <content type="html">
+                    
+&lt;h1 id=&#34;路由设置&#34;&gt;&lt;a href=&#34;http://def.life/tech/windows_command_memo/#路由设置&#34; class=&#34;anchor-link&#34; aria-label=&#34;路由设置&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;路由设置&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;route add 172.16.0.0 mask 255.240.0.0 192.168.19.254 -p
+route add 10.0.0.0 mask 255.0.0.0 192.168.19.254 -p
+route add 0.0.0.0 mask 0.0.0.0 172.20.19.254 -p
+route delete 0.0.0.0 mask 0.0.0.0 192.168.19.254
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;开启关闭idm代理&#34;&gt;&lt;a href=&#34;http://def.life/tech/windows_command_memo/#开启关闭idm代理&#34; class=&#34;anchor-link&#34; aria-label=&#34;开启关闭idm代理&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;开启/关闭IDM代理&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;@echo off  
+reg add HKEY_CURRENT_USER\Software\DownloadManager /v nProxyMode /t REG_DWORD /d 16 /f
+@echo off  
+reg add HKEY_CURRENT_USER\Software\DownloadManager /v nProxyMode /t REG_DWORD /d 1 /f
+&lt;/code&gt;&lt;/pre&gt;
+                    
+
+                </content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/categories/work/" term="Work" label="Work" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/windows/" term="Windows" label="Windows" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">
+Github/Gerrit用法备忘</title>
+            <link rel="alternate" type="text/html" href="http://def.life/tech/help_for_github_or_gerrit/" />
+            <id>http://def.life/tech/help_for_github_or_gerrit/</id>
+            <updated>2026-07-31T01:48:14&#43;00:00</updated>
+            <published>2019-03-19T11:15:00&#43;08:00</published>
+            <author>
+                    <uri>http://def.life/</uri>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html">
+                &lt;h1 id=&#34;配置ssh公钥访问github&#34;&gt;配置SSH公钥访问Github&lt;/h1&gt;
+&lt;p&gt;Github提供两种克隆URL：&lt;strong&gt;HTTPS&lt;/strong&gt;和&lt;strong&gt;SSH&lt;/strong&gt;；HTTPS URL的PUSH等操作时需要验证用户名和密码；而使用SSH URL可以避免这种麻烦，但是在使用之前需要配置SSH KEY。&lt;/p&gt;
+                
+
+            </summary>
+            
+                <content type="html">
+                    
+&lt;h1 id=&#34;配置ssh公钥访问github&#34;&gt;&lt;a href=&#34;http://def.life/tech/help_for_github_or_gerrit/#配置ssh公钥访问github&#34; class=&#34;anchor-link&#34; aria-label=&#34;配置ssh公钥访问github&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;配置SSH公钥访问Github&lt;/h1&gt;
+&lt;p&gt;Github提供两种克隆URL：&lt;strong&gt;HTTPS&lt;/strong&gt;和&lt;strong&gt;SSH&lt;/strong&gt;；HTTPS URL的PUSH等操作时需要验证用户名和密码；而使用SSH URL可以避免这种麻烦，但是在使用之前需要配置SSH KEY。&lt;/p&gt;
+&lt;p&gt;配置方法步骤如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;配置git&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git config --global user.name &amp;#34;fatdeer&amp;#34;
+$ git config --global user.email &amp;#34;fatdeer@foxmail.com&amp;#34;
+$ git config --list
+&amp;gt; user.name=fatdeer
+&amp;gt; user.email=fatdeer@foxmail.com
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;创建SSH KEY&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ssh-keygen -t rsa -C &amp;#34;fatdeer@foxmail.com&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;参考：&lt;a href=&#34;https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;创建SSH Key&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;在Github上配置SSH 公钥&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考：&lt;a href=&#34;https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;添加SSH Key到Github账户&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;验证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh -T git@github.com
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;添加更新submodule&#34;&gt;&lt;a href=&#34;http://def.life/tech/help_for_github_or_gerrit/#添加更新submodule&#34; class=&#34;anchor-link&#34; aria-label=&#34;添加更新submodule&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;添加/更新Submodule&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git submodule add -b &amp;lt;branch&amp;gt; --force &amp;lt;repository_url&amp;gt; &amp;lt;path&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;sparse-checkout&#34;&gt;&lt;a href=&#34;http://def.life/tech/help_for_github_or_gerrit/#sparse-checkout&#34; class=&#34;anchor-link&#34; aria-label=&#34;sparse-checkout&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;Sparse-Checkout&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone --no-checkout &amp;lt;path&amp;gt;
+git config core.sparsecheckout true
+echo &amp;#34;path1/&amp;#34; &amp;gt;&amp;gt; .git/info/sparse-checkout
+git checkout
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;merge-conflict&#34;&gt;&lt;a href=&#34;http://def.life/tech/help_for_github_or_gerrit/#merge-conflict&#34; class=&#34;anchor-link&#34; aria-label=&#34;merge-conflict&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 512 512&#34; class=&#34;icon anchor-icon&#34;&gt;&lt;path d=&#34;M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z&#34;/&gt;&lt;/svg&gt;&lt;/a&gt;Merge Conflict&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git remote update
+git rebase origin/[branch]
+git status
+do something with conflict file
+git add [conflict file]
+git rebase --continue
+git push origin HEAD:refs/for/[branch]
+&lt;/code&gt;&lt;/pre&gt;
+                    
+
+                </content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/categories/work/" term="Work" label="Work" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="http://def.life/tags/github/" term="Github" label="Github" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+</feed>
